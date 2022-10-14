@@ -20,3 +20,8 @@
 Framework: ReactJS. Prototyping: Figma.
 ### Back End
 Language: Python(Django). API Calls: [Umich API](api.umich.edu) [Dialogflow](dialogflow.cloud.google.com). [Azure](https://azure.microsoft.com/en-us/products/bot-services/#overview). [RASA](https://rasa.com/). DB: SQLite.
+
+### Reach Goals
+- [] Add Audio to Text Recognition.
+- [] Language Translation.
+- [] For Front End: Implemented urls.
