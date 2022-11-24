@@ -1,0 +1,26 @@
+.rec-card {
+  width: fit-content;
+  align-self: center;
+}
+
+.rec-page {
+  display: grid;
+  grid-template-columns: minmax(1rem, 1fr) minmax(auto, 60rem) minmax(1rem, 1fr);
+  grid-template-rows: 30vh auto;
+  background-color: #F1F6FD;
+  min-height: 100vh;
+}
+
+.rec-title {
+  grid-column: 1/ -1;
+  height: fit-content;
+  align-self: center;
+}
+
+.rec-cards {
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr));
+  justify-items: center;
+  gap: 2rem 2rem;
+}
