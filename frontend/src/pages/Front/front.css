@@ -1,0 +1,31 @@
+.front-wrapper {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "hero";
+}
+
+.front-content-wrapper {
+    grid-area: hero;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.background-img {
+    grid-area: hero;
+    object-fit: cover;
+    width: 100%;
+    height: 50vh;
+    z-index: -1;
+}
+
+.front-texts {
+    align-self: center;
+    justify-self: center;
+    width: 40vw;
+}
+
+.preview-img {
+    justify-self: center;
+    align-self: center;
+    height: 85vh;
+}

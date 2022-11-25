@@ -2,7 +2,7 @@ import React from "react";
 import { RecCourse } from "../../components/RecCourse/RecCourse";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import './recommendation.css';
+import "./recommendation.css";
 
 export type CourseRec = {
   basedOn: string[];
