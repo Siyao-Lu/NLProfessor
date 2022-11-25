@@ -1,5 +1,8 @@
 import React from "react";
 import { RecCourse } from "../../components/RecCourse/RecCourse";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
+import './recommendation.css';
 
 export type CourseRec = {
   basedOn: string[];
@@ -13,7 +16,7 @@ type AppProps = {
   basedOn: string[];
 };
 
-export const Recommendation = ({ courses, basedOn }: AppProps) => {
+const Recommendation = ({ courses, basedOn }: AppProps) => {
   return (
     <div className="rec-page">
       <div className="rec-title">
@@ -37,3 +40,4 @@ export const Recommendation = ({ courses, basedOn }: AppProps) => {
     </div>
   );
 };
+export default Recommendation;

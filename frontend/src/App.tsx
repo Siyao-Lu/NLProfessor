@@ -1,46 +1,9 @@
 import React from "react";
-import {
-  Recommendation,
-  CourseRec,
-} from "./pages/recommendations/recommendation";
-import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap-icons/font/bootstrap-icons.css";
+// import Routing from './routes/Routes';
+import ChatUI from './pages/Landing';
 
-function App() {
-  return (
-    <div>
-      <Recommendation
-        courses={[
-          {
-            basedOn: ["machine learning", "team"],
-            courseName: "Conversational AI",
-            courseDept: "EECS",
-            courseNum: 449,
-          },
-          {
-            basedOn: ["machine learning", "team"],
-            courseName: "Conversational AI",
-            courseDept: "EECS",
-            courseNum: 449,
-          },
-          {
-            basedOn: ["machine learning", "team"],
-            courseName: "Conversational AI",
-            courseDept: "EECS",
-            courseNum: 449,
-          },
-          {
-            basedOn: ["machine learning", "team"],
-            courseName: "Conversational AI",
-            courseDept: "EECS",
-            courseNum: 449,
-          },
-        ]}
-        basedOn={["juniro", "machine learning", "team"]}
-      />
-    </div>
-  );
-}
+const App = () => {
+  return < ChatUI />
+};
 
 export default App;
