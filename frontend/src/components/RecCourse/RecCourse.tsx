@@ -2,7 +2,7 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import ProgressBar from "react-bootstrap/ProgressBar";
-import Placeholder from "react-bootstrap/Placeholder";
+import Accordion from "react-bootstrap/Accordion";
 import "./RecCourse.css";
 
 type AppProps = {
@@ -29,7 +29,14 @@ export const RecCourse = ({
         <Card.Title>
           {courseDept} {courseNum}: {courseName}
         </Card.Title>
-        <Card.Text>{courseDesc}</Card.Text>
+        <Card.Text>
+          <Accordion flush>
+            <Accordion.Item eventKey="0">
+              <Accordion.Header>Detailed description</Accordion.Header>
+              <Accordion.Body>{courseDesc}</Accordion.Body>
+            </Accordion.Item>
+          </Accordion>
+        </Card.Text>
         {workload === 0 ? (
           <div className="no-data-placeholder text-muted">
             <i className="bi bi-exclamation-triangle"></i> workload data

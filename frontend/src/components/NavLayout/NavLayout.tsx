@@ -7,7 +7,7 @@ import "./NavLayout.css";
 const NavLayout = () => {
   return (
     <>
-      <Navbar fixed="top" bg="transparent" variant="light">
+      <Navbar fixed="top" variant="light">
         <Container className="nav-bar">
           <Navbar.Brand className="brand-title" as={Link} to="/">
             <i className="bi bi-robot"></i> NLProfessor
