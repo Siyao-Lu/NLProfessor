@@ -21,7 +21,7 @@ NLProfessor: Conversational advising system.
 ### Front End
 Framework: ReactJS. Prototyping: Figma.
 ### Back End
-Language: Python(Django). API Calls: [Umich API](api.umich.edu) [Dialogflow](dialogflow.cloud.google.com). [Azure](https://azure.microsoft.com/en-us/products/bot-services/#overview). [RASA](https://rasa.com/). DB: SQLite.
+Language: Python(Django). API Calls: [Umich API](https://api.umich.edu) [Dialogflow](https://dialogflow.cloud.google.com). [Azure](https://azure.microsoft.com/en-us/products/bot-services/#overview). [RASA](https://rasa.com/). DB: SQLite.
 
 ### Reach Goals
 - [ ] Add Audio to Text Recognition.
