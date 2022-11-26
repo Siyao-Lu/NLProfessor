@@ -1,5 +1,5 @@
 .front-wrapper {
-    height: 100vh;
+    height: 90vh;
     display: grid;
     grid-template-areas: "hero";
 }
@@ -27,5 +27,15 @@
 .preview-img {
     justify-self: center;
     align-self: center;
-    height: 85vh;
+    height: 88vh;
+}
+
+.front-title {
+    background-image: linear-gradient(60deg, #C87C00, #8B3208, #53200F, #010420);
+    background-clip: text;
+    color: transparent;
+}
+
+.front-description {
+    color: #425466;
 }

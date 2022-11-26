@@ -13,9 +13,13 @@ const Front = () => {
       <img className="background-img" src={background} alt="background" />
       <div className="front-content-wrapper">
         <div className="front-texts">
-          <h1>Build Instant & Personalized Course Schedules</h1>
-          <p>Automate the way you search through course guide and Atlas</p>
-          <Link className="btn btn-primary" role="button" to="/chat">
+          <h1 className="front-title">
+            Build Instant & Personalized Course Schedules
+          </h1>
+          <p className="front-description">
+            Automate the way you search through course guide and Atlas
+          </p>
+          <Link className="btn btn-primary btn-lg" role="button" to="/chat">
             Try Now! <i className="bi bi-arrow-right-circle"></i>
           </Link>
         </div>

@@ -20,6 +20,11 @@ const NavLayout = () => {
               Recommendations
             </Nav.Link>
           </Nav>
+          <Nav>
+            <Nav.Link href="https://github.com/SonyaInSiberia/NLProfessor">
+              <i className="bi bi-box-arrow-up-right"></i> GitHub
+            </Nav.Link>
+          </Nav>
         </Container>
       </Navbar>
       <Outlet />
