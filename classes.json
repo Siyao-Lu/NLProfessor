@@ -65,8 +65,8 @@
   },
   "250": {
     "number": 250,
-    "name": "Elec Sens S",
-    "desc": "c Sens Sys",
+    "name": "Electronic Sensing Systems",
+    "desc": "Introduction to properties and behavior of electromagnetic energy as it pertains to naval applications of communication, radar, and electro-optics. Additional topics include sound navigation and ranging (SONAR) tracking and guidance systems, and computer controlled systems. Several laboratory demonstrations will illustrate applications of the theories and concepts learned in the classroom.",
     "workload": 1.4,
     "tags": [],
     "prereqs": []
@@ -225,8 +225,8 @@
   },
   "398": {
     "number": 398,
-    "name": "Special Topi",
-    "desc": "cial Topics",
+    "name": "Special Topics",
+    "desc": "Topics of current interest selected by the faculty. Lecture, seminar, or laboratory.",
     "workload": 0,
     "tags": [],
     "prereqs": []
@@ -257,8 +257,8 @@
   },
   "410": {
     "number": 410,
-    "name": "Patent Fundamentals for Engineers -- This course covers the fundamentals of patents of Engineers.  The first part of the course focuses on the rules and codes that govern patent prosecution, and the second part focuses on claim drafting and amendment writing.  Other topics covered includes litigation, ethics and licensin",
-    "desc": "ent Fundamentals for Engineers -- This course covers the fundamentals of patents of Engineers.  The first part of the course focuses on the rules and codes that govern patent prosecution, and the second part focuses on claim drafting and amendment writing.  Other topics covered includes litigation, ethics and licensing.",
+    "name": "Patent Fundamentals for Engineers",
+    "desc": "This course covers the fundamentals of patents of Engineers.  The first part of the course focuses on the rules and codes that govern patent prosecution, and the second part focuses on claim drafting and amendment writing.  Other topics covered includes litigation, ethics and licensing.",
     "workload": 0,
     "tags": [],
     "prereqs": []
@@ -305,8 +305,8 @@
   },
   "438": {
     "number": 438,
-    "name": "Adv Lasers L",
-    "desc": " Lasers Lab",
+    "name": "Adv Lasers Lab",
+    "desc": "Construction and design of lasers; gaussian beams; nonlinear optics; fiber optics; detectors; dispersion; Fourier optics; spectroscopy. Project requires the design and set-up of a practical optical system",
     "workload": 1.86,
     "tags": [],
     "prereqs": []
@@ -337,8 +337,8 @@
   },
   "448": {
     "number": 448,
-    "name": "E M Energy Conv",
-    "desc": " Energy Conv I",
+    "name": "Applied Machine Learning for Modeling Human Behavior",
+    "desc": "Machine learning, with a focus on human behavior, across multiple modalities including speech and text. Teams complete projects based primarily on their individual interests centered on modeling an aspect of human behavior. Prior experience with speech/language or other data modeling is not needed.",
     "workload": 1.6,
     "tags": [],
     "prereqs": []
@@ -507,7 +507,7 @@
     "number": 493,
     "name": "User Interface Development",
     "desc": "Concepts and techniques for designing computer system user interfaces to be easy to learn and use, with an introduction to their implementation.  Task analysis, design of functionality, display and interaction design, and usability evaluation.  Interface programming using an object-oriented application framework.  Fluency in a standard object-oriented programming language is assumed.",
-    "workload": 1.26,
+    "workload": 2.5,
     "tags": [],
     "prereqs": []
   },
@@ -561,8 +561,8 @@
   },
   "513": {
     "number": 513,
-    "name": "Flat Pan Displa",
-    "desc": "t Pan Displays",
+    "name": "Flat Pan Displays",
+    "desc": "Flat Pan Displays",
     "workload": 0,
     "tags": [],
     "prereqs": []
@@ -585,8 +585,8 @@
   },
   "519": {
     "number": 519,
-    "name": "Plasma L",
-    "desc": "sma Lab",
+    "name": "Plasma Lab",
+    "desc": "Laboratory techniques for plasma ionization and diagnosis relevant to plasma processing, propulsion, vacuum electronics, and fusion. Plasma generation techniques includes: high voltage-DC, radio frequency, and e-beam discharges. Diagnostics include: Langmuir probes, microwave cavity perturbation, microwave interferometry, laser schlieren, and optical emission spectroscopy. Plasma parameters measured are: electron/ion density and electron temperature.",
     "workload": 0,
     "tags": [],
     "prereqs": []
@@ -601,8 +601,8 @@
   },
   "522": {
     "number": 522,
-    "name": "Analog Integr Ck",
-    "desc": "log Integr Ckts",
+    "name": "Analog Integr Ckts",
+    "desc": "Analog summary and overview of radio architecture, noise, distortion, oscillators, LNAs and mixers, and voltage references and biasing. Review and study of integrated circuit fabrication technologies and BJT and MOS transistor models. Detailed analysis and design of analog integrated circuits including power amplifiers, voltage references, voltage regulators, rectifiers, oscillators, multipliers, mixers, phase detectors and phaselocked loops. Students will learn to understand the operating principles and design concepts for a number of important RF IC building blocks including RF amplifiers, oscillators, mixers, and references. They will implement individual design projects in a current CMOS process. The course also includes an openended team project for which groups will research a relevant topic of their choosing and design a solution including layout of RF components. Groups will give presentations of their results to the class.",
     "workload": 0,
     "tags": [],
     "prereqs": []
@@ -633,16 +633,16 @@
   },
   "531": {
     "number": 531,
-    "name": "Antenna Thry&D",
-    "desc": "enna Thry&Des",
+    "name": "Antenna Thry&Des",
+    "desc": "Antenna Thry&Des",
     "workload": 0,
     "tags": [],
     "prereqs": []
   },
   "533": {
     "number": 533,
-    "name": "Micro Meas L",
-    "desc": "ro Meas Lab",
+    "name": "Micro Meas Lab",
+    "desc": "Micro Meas Lab",
     "workload": 0,
     "tags": [],
     "prereqs": []
@@ -657,16 +657,16 @@
   },
   "539": {
     "number": 539,
-    "name": "Lase",
-    "desc": "ers",
+    "name": "Lasers",
+    "desc": "Lasers",
     "workload": 0,
     "tags": [],
     "prereqs": []
   },
   "541": {
     "number": 541,
-    "name": "Applied Quantum Mechanics ",
-    "desc": "lied Quantum Mechanics II",
+    "name": "Applied Quantum Mechanics II",
+    "desc": "Continuation of nonrelativistic quantum mechanics. Advanced angular momentum theory, second quantization, non-relativistic quantum electrodynamics, advanced scattering theory, density matrix formalism, reservoir theory.",
     "workload": 0,
     "tags": [],
     "prereqs": []
@@ -729,8 +729,8 @@
   },
   "562": {
     "number": 562,
-    "name": "Nl Sys&C",
-    "desc": "Sys&Con",
+    "name": "Nl Sys&Con",
+    "desc": "Introduction to the analysis and design of nonlinear systems and nonlinear control systems. Stability analysis using Liapunov, input-output and asymptotic methods. Design of stabilizing controllers using a variety of methods: linearization, absolute stability theory, vibrational control, sliding modes and feedback linearization.",
     "workload": 0,
     "tags": [],
     "prereqs": []
@@ -801,8 +801,8 @@
   },
   "598": {
     "number": 598,
-    "name": "Special Topi",
-    "desc": "cial Topics",
+    "name": "Special Topics",
+    "desc": "Topics of current interest in electrical engineering and computer science. Lectures, seminar, or laboratory. Can be taken more than once for credit.",
     "workload": 0,
     "tags": [],
     "prereqs": []
@@ -825,8 +825,8 @@
   },
   "644": {
     "number": 644,
-    "name": "Computational Modeling of Cogniti",
-    "desc": "putational Modeling of Cognition",
+    "name": "Computational Modeling of Cognition",
+    "desc": "Computational Modeling of Cognition",
     "workload": 0,
     "tags": [],
     "prereqs": []
