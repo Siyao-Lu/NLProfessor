@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lekton:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
+
+// Override default variables before the import
+$dark: #231A36;
+$primary: #6750A4;
+$font-family-base: 'Inter', sans-serif;
+
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';

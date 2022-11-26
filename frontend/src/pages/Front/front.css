@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lekton:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
+
 .front-wrapper {
-    height: 90vh;
+    height: 100vh;
     display: grid;
     grid-template-areas: "hero";
 }
@@ -20,8 +22,8 @@
 
 .front-texts {
     align-self: center;
-    justify-self: center;
-    width: 33vw;
+    justify-self: end;
+    width: 37vw;
 }
 
 .preview-img {
@@ -34,6 +36,8 @@
     background-image: linear-gradient(60deg, #C87C00, #8B3208, #53200F, #010420);
     background-clip: text;
     color: transparent;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
 }
 
 .front-description {

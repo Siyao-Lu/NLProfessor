@@ -4,6 +4,7 @@ import Front from "./pages/Front";
 import Recommendataion from "./pages/Recommendation";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavLayout from "./components/NavLayout/NavLayout";
+import "./custom-bootstrap.scss";
 
 const App = () => {
   return (

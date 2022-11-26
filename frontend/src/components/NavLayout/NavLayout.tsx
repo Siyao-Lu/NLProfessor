@@ -2,13 +2,16 @@ import Container from "react-bootstrap/Container";
 import { Outlet, Link } from "react-router-dom";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import "./NavLayout.css";
 
 const NavLayout = () => {
   return (
     <>
-      <Navbar bg="light" variant="light">
+      <Navbar fixed="top" bg="transparent" variant="light">
         <Container className="nav-bar">
-          <Navbar.Brand>NLProfessor</Navbar.Brand>
+          <Navbar.Brand className="brand-title" as={Link} to="/">
+            <i className="bi bi-robot"></i> NLProfessor
+          </Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link as={Link} to="/">
               Home
@@ -22,7 +25,7 @@ const NavLayout = () => {
           </Nav>
           <Nav>
             <Nav.Link href="https://github.com/SonyaInSiberia/NLProfessor">
-              <i className="bi bi-box-arrow-up-right"></i> GitHub
+              <i className="bi bi-github"></i> GitHub
             </Nav.Link>
           </Nav>
         </Container>

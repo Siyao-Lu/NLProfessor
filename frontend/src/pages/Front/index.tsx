@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import background from "./background.png";
 import preview from "./preview.png";
-import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "./front.css";
 
@@ -18,7 +17,7 @@ const Front = () => {
           <p className="front-description">
             Automate the way you search through course guide and Atlas
           </p>
-          <Link className="btn btn-primary btn-lg" role="button" to="/chat">
+          <Link className="btn btn-dark btn-lg" role="button" to="/chat">
             Try Now! <i className="bi bi-arrow-right-circle"></i>
           </Link>
         </div>
