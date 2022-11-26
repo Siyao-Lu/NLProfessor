@@ -7,7 +7,9 @@ export type CourseRec = {
   basedOn: string[];
   courseName: string;
   courseDept: string;
+  courseDesc: string;
   courseNum: number;
+  workload: number;
 };
 
 type AppProps = {
@@ -33,6 +35,8 @@ const Recommendation = ({ courses, basedOn }: AppProps) => {
             courseName={course.courseName}
             courseDept={course.courseDept}
             courseNum={course.courseNum}
+            courseDesc={course.courseDesc}
+            workload={course.workload}
           />
         ))}
       </div>
