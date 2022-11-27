@@ -1,9 +1,9 @@
 const express = require('express');
 const send = express.Router();
-const axios = require('axios').default;
+const json_data = require('./sample.json');
 
 send.get("/api/send", (req, res) => {
-    res.json("Sent!");
+    res.json(json_data);
 });
 
 module.exports = send;
