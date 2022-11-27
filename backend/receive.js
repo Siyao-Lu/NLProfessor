@@ -1,12 +1,37 @@
-const express = require('express');
+const express = require("express");
 const receive = express.Router();
-const axios = require('axios').default;
+const axios = require("axios").default;
+const dialogflow = require("@google-cloud/dialogflow");
 
-receive.post("/api/receive", (req, res) => {
-    const body = req.body;
-    console.log(body);
-    // dialogueflow communicate, get data 
-    res.json("Received!");
-})
+// Instantiates a session client
+const sessionClient = new dialogflow.SessionsClient();
+
+const DIALOGFLOW_PROJECT_ID = "smart-advisor-ympd";
+
+receive.post("/api/receive", async (req, res) => {
+  const body = req.body;
+  console.log(body);
+  // dialogueflow communicate, get data
+
+  const sessionPath = sessionClient.projectAgentSessionPath(
+    DIALOGFLOW_PROJECT_ID,
+    body.sessionId
+  );
+  const request = {
+    session: sessionPath,
+    queryInput: {
+      text: {
+        text: body.userMsg,
+        languageCode: "en-US",
+      },
+    },
+  };
+
+  const responses = await sessionClient.detectIntent(request);
+
+  const responseStr = responses[0].queryResult.fulfillmentText;
+
+  res.json(responseStr);
+});
 
 module.exports = receive;

@@ -19,6 +19,8 @@ type msg = {
   content: string;
 };
 
+const SESSION_ID = Math.random().toString(36).slice(2);
+
 export default function ChatBox() {
   const userMsgRef = useRef<any>(null);
   const [userMsg, setUserMsg] = useState("");
@@ -29,9 +31,11 @@ export default function ChatBox() {
 
   const sendMSG = useCallback(async () => {
     await delay(1000);
-    const res = await axios.post(`/api/receive`, { userMsg: userMsg });
-    console.log(res);
-    console.log(userMsg);
+    console.log(SESSION_ID);
+    const res = await axios.post(`/api/receive`, {
+      userMsg: userMsg,
+      sessionId: SESSION_ID,
+    });
     setDisplayMsg((list: any) => [...list, { from: "bot", content: res.data }]);
   }, [userMsg, setDisplayMsg]);
 
