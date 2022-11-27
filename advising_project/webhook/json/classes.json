@@ -1,0 +1,842 @@
+{
+  "110": {
+    "number": 110,
+    "name": "Discover Computer Science",
+    "desc": "Introduction to basic CS concepts (variables, conditionals, loops, functions) using an introductory programming language, such a Python. Students interact with researchers and computing professionals to learn about real-world, interdisciplinary applications of CS. Intended for students without prior programming experience to (optionally take prior to EECS 183 or ENGR 101.",
+    "workload": 1.21,
+    "tags": [],
+    "prereqs": []
+  },
+  "183": {
+    "number": 183,
+    "name": "Elementary Programming Concepts",
+    "desc": "Fundamental concepts and skills of programming in a high level language.  Flow of control:  selection, iteration, subprograms.  Data structures:  strings, arrays, records, lists, tables.  Algorithms using selection and iteration (decision making, finding maxima/minima, searching, sorting, simulation, etc.).  Good program design, structure, and style are emphasized.  Testing and debugging. Not intended for Engineering students (who should take ENGR 101), nor for CS majors in LSA who qualify for EECS 280.",
+    "workload": 1.54,
+    "tags": [],
+    "prereqs": []
+  },
+  "200": {
+    "number": 200,
+    "name": "Electrical Engineering Systems Design I",
+    "desc": "Gain a systems engineering perspective of electrical engineering centered around a design competition to address a societally-relevant challenge. Apply electrical engineering concepts in circuits, computing, control, sensors, optics, power, signal processing, and wireless communications to a system such as a robot and adapt the system to achieve competition objectives within defined engineering constraints. Projects are overseen and graded by faculty and may also involve mentoring by representatives from industrial, governmental and/or non-profit organizations.",
+    "workload": 1.68,
+    "tags": [],
+    "prereqs": []
+  },
+  "201": {
+    "number": 201,
+    "name": "Computer Science Pragmatics",
+    "desc": "Designed to teach the essentials of using a computer effectively. Topics covered include shells, environment, scripting, Makefiles, compilers, debugging tools, and version control.",
+    "workload": 1.53,
+    "tags": [],
+    "prereqs": []
+  },
+  "203": {
+    "number": 203,
+    "name": "Discrete Math",
+    "desc": "Introduction to the mathematical foundations of computer science.  Topics covered include:  prepositional and predicate logic, set theory, function and relations, growth of functions and asymptotic notation, introduction to algorithms, elementary combinatorics, and graph theory, and discrete probability theory.",
+    "workload": 2.39,
+    "tags": [],
+    "prereqs": []
+  },
+  "215": {
+    "number": 215,
+    "name": "Introduction to Electronic Circuits",
+    "desc": "Basic Concepts of voltage and current; Kirchhoff's voltage and current laws; Ohm's law; voltage and current sources; Thevenin and Norton equivalent circuits; DC and low frequency active circuits using operational amplifiers, diodes, and transistors; small signal analysis; energy and power. Time-and frequency-domain analysis of RLC circuits. Basic passive and active electronic filters. Laboratory experience with electrical signals and circuits.",
+    "workload": 2.18,
+    "tags": [],
+    "prereqs": []
+  },
+  "216": {
+    "number": 216,
+    "name": "Introduction to Signals and Systems",
+    "desc": "Theory and practice of signals and systems engineering in continuous and discrete time.  Continuous-time linear time-invariant systems, impulse response, convolution.  Fourier series, Fourier transforms, spectrum, frequency response and filtering.  Sampling leading to basic digital signal processing using the discrete-time Fourier and the discrete Fourier transform.  Laplace transform, transfer functions, poles and zeros, stability.  Applications of Laplace transform theory to RLC circuit analysis.  Introduction to communications, control, and signal processing. Weekly recitations and hardware/Matlab software laboratories.",
+    "workload": 2.9,
+    "tags": [],
+    "prereqs": []
+  },
+  "230": {
+    "number": 230,
+    "name": "Engineering Electromagnetics",
+    "desc": "Vector calculus.  Electrostatics.  Magnetostatics.  Time-varying fields:  Faraday's Law and displacement current.  Maxwell's equations in differential form.  Traveling waves and phasors.  Uniform plane waves.  Reflection and transmission at normal incidence.  Transmission lines.  Laboratory segment may include experiments with transmission lines, the use of computer-simulation exercises, and classroom demonstrations.",
+    "workload": 2.2,
+    "tags": [],
+    "prereqs": []
+  },
+  "250": {
+    "number": 250,
+    "name": "Electronic Sensing Systems",
+    "desc": "Introduction to properties and behavior of electromagnetic energy as it pertains to naval applications of communication, radar, and electro-optics. Additional topics include sound navigation and ranging (SONAR) tracking and guidance systems, and computer controlled systems. Several laboratory demonstrations will illustrate applications of the theories and concepts learned in the classroom.",
+    "workload": 1.4,
+    "tags": [],
+    "prereqs": []
+  },
+  "270": {
+    "number": 270,
+    "name": "Introduction to Logic Design",
+    "desc": "Boolean algebra, digital design techniques, logic gates, logic and state minimization, standard combinational circuits, latches and flip-flops, sequential circuits, synthesis of synchronous sequential circuits, state machines, FPGAs, memories, arithmetic circuits, and computer-aided design. Laboratory involves CAD-based design implemented on a FPGA including elementary interfacing.",
+    "workload": 2.34,
+    "tags": [],
+    "prereqs": []
+  },
+  "280": {
+    "number": 280,
+    "name": "Programming and Introductory Data Structures",
+    "desc": "Algorithm development and effective programming, top-down analysis, structured programming, testing, and program correctness.  Program language syntax and static and runtime semantics.  Scope, procedure instantiation, recursion, abstract data types, and parameter passing methods.  Structured data types, pointers, linked data structures, stacks, queues, arrays, records, and trees.",
+    "workload": 2.39,
+    "tags": [],
+    "prereqs": []
+  },
+  "281": {
+    "number": 281,
+    "name": "Data Structures and Algorithms",
+    "desc": "Introduction to the algorithm analysis and O-notation; Fundamental data structures including lists, stacks, queues, priority queues, hash tables, binary trees, search trees, balanced, trees, and graphs; searching and sorting algorithms; recursive algorithms; basic graph algorithms; introduction to greedy algorithms and divide and conquer strategy.  Several programming assignments.",
+    "workload": 3.17,
+    "tags": [],
+    "prereqs": []
+  },
+  "298": {
+    "number": 298,
+    "name": "Special Topics",
+    "desc": "Topics of current interest selected by the faculty and pilot versions of new courses.",
+    "workload": 0,
+    "tags": [],
+    "prereqs": []
+  },
+  "300": {
+    "number": 300,
+    "name": "Electrical Engineering Systems Design II",
+    "desc": "Principles of engineering design for electrical engineering systems. Integration of electrical engineering foundational concepts to address systems-level objectives. Semester-long open-ended design based on a societally-relevant challenge. Technical topics include embedded systems fundamentals, sensing, power and energy tradeoffs, and addressing realistic constraints of project requirements. Projects are overseen/graded by faculty and may also involve mentoring by representatives from external organizations.",
+    "workload": 2.26,
+    "tags": [],
+    "prereqs": []
+  },
+  "301": {
+    "number": 301,
+    "name": "Probabilistic Methods in Engineering",
+    "desc": "Basic concepts of probability theory.  Random variables: discrete, continuous, and conditional probability distributions; averages; independence.  Statistical inference: hypothesis testing and estimation.  Introduction to discrete and continuous random processes.",
+    "workload": 1.78,
+    "tags": [],
+    "prereqs": []
+  },
+  "311": {
+    "number": 311,
+    "name": "Analog Circuits",
+    "desc": "DC and AC circuit models for diodes, bipolar junction transistors and field-effect transistors; small-signal and piecewise analysis of nonlinear circuits; analysis and design of single-stage and multi-stage transistor amplifiers; gain, biasing and frequency response; op-amp based filter design; non-ideal op-amps. Design projects. Lecture and laboratory. Projects are overseen/graded by faculty and may also involve mentoring by representatives from external organizations.",
+    "workload": 2.75,
+    "tags": [],
+    "prereqs": []
+  },
+  "312": {
+    "number": 312,
+    "name": "Digital Integrated Circuits",
+    "desc": "Review of MOSFET device operation. Design of digital circuits, including static CMOS, ratioed, dynamic, and pass-transistor logic. Memory structure, including static and dynamic RAM; sequential elements; and interconnects. Analysis of circuit delay, power, and noise margins. Use of circuit simulation in analysis and design.",
+    "workload": 2.56,
+    "tags": [],
+    "prereqs": []
+  },
+  "314": {
+    "number": 314,
+    "name": "Electrical Circuits, Systems and Applications",
+    "desc": "Students will learn about electrical systems operation, specifications and interactions with other modules.  Theory will be motivated by the use of practical examples taken from a variety of fields.  Topics covered include circuit fundamentals, frequency response, and transients, analog and digital electronics.  In lab, students will build and analyze circuits including amplifiers, filters and temperature controllers.",
+    "workload": 2.41,
+    "tags": [],
+    "prereqs": []
+  },
+  "320": {
+    "number": 320,
+    "name": "Introduction to Semiconductor Devices",
+    "desc": "Introduction to semiconductors in terms of atomic bonding and electron energy bands.  Equilibrium statistics of electrons and holes.  Carrier dynamics; continuity, drift and diffusion currents, generation and recombination process (including important optical processes).  Introduction to:  PN junctions, light detectors and emitters, metal-semiconductor junctions, bipolar junction transistors, and MOSFETS.",
+    "workload": 2.07,
+    "tags": [],
+    "prereqs": []
+  },
+  "330": {
+    "number": 330,
+    "name": "Introduction to Antennas and Wireless Systems",
+    "desc": "Electromagnetic fields and waves applied to antennas and wireless systems. The course covers wave reflection and transmission, dipoles, arrays, horn and patch antennas, wave-guides, microstrip lines, resonators, and their applications in communication and radar systems. Introduction to advanced electromagnetics, communication systems, sensor systems, remote sensing and global navigation systems.",
+    "workload": 1.77,
+    "tags": [],
+    "prereqs": []
+  },
+  "334": {
+    "number": 334,
+    "name": "Principles of Optics",
+    "desc": "Basic principles of optics:  light sources and propagation of light; geometrical optics, lenses and imaging; ray tracing and lens aberrations; interference of light waves, coherent and incoherent light beams; Fresnel and Fraunhofer diffraction.  Overview of modern optics with laboratory demonstrations.",
+    "workload": 1.67,
+    "tags": [],
+    "prereqs": []
+  },
+  "351": {
+    "number": 351,
+    "name": "Introduction to Digital Signal Processing",
+    "desc": "DSP methods and applications.  Sampling and reconstruction, difference equations, convolution, stability, z-transform, transfer function, frequency response, FIR and IIR, DTFT, DFT, FFT, windows, spectrogram, computer-aided filter design, correlation, multirate, basic image processing, discrete-time wavelets, filter banks.  Applications: filtering, denoising, deconvolution, classification, others.  Projects are overseen/graded by faculty and may also involve mentoring by representatives from external organizations.",
+    "workload": 1.91,
+    "tags": [],
+    "prereqs": []
+  },
+  "367": {
+    "number": 367,
+    "name": "Introduction to Autonomous Robotics",
+    "desc": "A computational introduction to the modeling and control of autonomous robots and mobile manipulators. Programming projects and lectures cover 3D coordinate systems, axis-angle rotation, forward and inverse kinematics, physical simulation and numerical integration, motion control, path planning, high dimensional motion planning, and robot software systems. Emphasizes portable programming of general robots.",
+    "workload": 1.48,
+    "tags": [],
+    "prereqs": []
+  },
+  "370": {
+    "number": 370,
+    "name": "Introduction to Computer Organization",
+    "desc": "Basic concepts of computer organization and hardware.   Instructions executed by a processor and how to use these instructions in simple assembly-language programs.  Stored-program concept.  Data-path and control for multiple implementations of a processor.  Performance evaluation, pipelining, caches, virtual memory, input/output.",
+    "workload": 2.36,
+    "tags": [],
+    "prereqs": []
+  },
+  "373": {
+    "number": 373,
+    "name": "Introduction to Embedded System Design",
+    "desc": "Principles of designing application-specific computer systems that interact with the physical world. Covers memory-mapped I/O, interrupts, analog interfacing, microprocessors, reconfigurable hardware, sensors, and actuators. Complex hardware/software system design and implementation. Substantial student-defined team design project.",
+    "workload": 3.07,
+    "tags": [],
+    "prereqs": []
+  },
+  "376": {
+    "number": 376,
+    "name": "Foundations of Computer Science",
+    "desc": "An introduction to theory of computation. Models of computation: finite state machines, Turing machines. Decidable and undecidable problems. Polynomial time computability and paradigms of algorithm design. Computational complexity emphasizing NP-hardness. Coping with intractability. Exploiting intractability: cryptography.",
+    "workload": 2.49,
+    "tags": [],
+    "prereqs": []
+  },
+  "388": {
+    "number": 388,
+    "name": "Introduction to Computer Security",
+    "desc": "This course introduces the principles and practices of computer security as applied to software, host systems, and networks.  It covers the foundations of building, using, and managing secure systems.  Topics include standard cryptographic functions and protocols, threats and defenses for real-world systems, incident responses, and computer forensics.  There will be homework exercises, programming projects, and a final exam.",
+    "workload": 2.24,
+    "tags": [],
+    "prereqs": []
+  },
+  "390": {
+    "number": 390,
+    "name": "Programming Paradigms",
+    "desc": "Survey of programming language features and paradigms and how to effectively use them. Introduces common features for program execution, data, and resource management. Exploration of paradigms including imperative, functional, object-oriented, and declarative programming, as well as advanced programming techniques. Students will gain experience in large projects that incorporate these paradigms.",
+    "workload": 2.14,
+    "tags": [],
+    "prereqs": []
+  },
+  "398": {
+    "number": 398,
+    "name": "Special Topics",
+    "desc": "Topics of current interest selected by the faculty. Lecture, seminar, or laboratory.",
+    "workload": 0,
+    "tags": [],
+    "prereqs": []
+  },
+  "402": {
+    "number": 402,
+    "name": "Computer Programming for Scientists and Engineers",
+    "desc": "This course presents concepts and hands-on experience for designing and writing programs using one or more programming languages currently important in solving real-world problems.  Intended for senior undergraduates and graduate students in science or engineering fields.",
+    "workload": 0,
+    "tags": [],
+    "prereqs": []
+  },
+  "403": {
+    "number": 403,
+    "name": "Graduate Foundations of Data Structures and Algorithms",
+    "desc": "Introductions to algorithm analysis and O-notation; Fundamental data structures including lists, stack, queues, priority queues, hash tables, binary trees, search trees, balanced trees and graphs; searching and sorting algorithms; recursive algorithms; basic graph algorithms; introduction to greedy algorithms and divide the conquer strategy. Several programming assignments.",
+    "workload": 0,
+    "tags": [],
+    "prereqs": []
+  },
+  "409": {
+    "number": 409,
+    "name": "Data Science Seminar",
+    "desc": "The MIDAS Seminar Series features leading data scientists from around the world and across the U-M campuses addressing a variety of topics in data science, and sharing their vision regarding the future of the field. These thought leaders are invited from academia, industry and government.",
+    "workload": 0,
+    "tags": [],
+    "prereqs": []
+  },
+  "410": {
+    "number": 410,
+    "name": "Patent Fundamentals for Engineers",
+    "desc": "This course covers the fundamentals of patents of Engineers.  The first part of the course focuses on the rules and codes that govern patent prosecution, and the second part focuses on claim drafting and amendment writing.  Other topics covered includes litigation, ethics and licensing.",
+    "workload": 0,
+    "tags": [],
+    "prereqs": []
+  },
+  "419": {
+    "number": 419,
+    "name": "Electric Machinery and Drives",
+    "desc": "Generation of forces and torques in electromechanical devices. Power electronic drives, motion control. DC machines. AC machines, surface mount permanent magnet machines, induction machines. Applications examined include electric propulsion drives for electric/hybrid vehicles, generators for wind turbines, and high-speed motor/alternators for flywheel energy storage systems. Laboratory experience with electric drives.",
+    "workload": 2.5,
+    "tags": [],
+    "prereqs": []
+  },
+  "425": {
+    "number": 425,
+    "name": "Integrated Microsystems Laboratory",
+    "desc": "Development of a complete integrated microsystem, from functional definition to final test. MEMS-based transducer design and electrical, mechanical and thermal limits. Design of MOS interface circuits. MEMS and MOS chip fabrication. Mask making, pattern transfer, oxidation, ion implantation and metallization. Packaging and testing challenges. Students work in interdisciplinary teams.  Projects are overseen/graded by faculty and may also involve mentoring by representatives from external organizations.",
+    "workload": 3.64,
+    "tags": [],
+    "prereqs": []
+  },
+  "427": {
+    "number": 427,
+    "name": "Very Large Scale Integrated Design I",
+    "desc": "Design techniques for full-custom VLSI circuits. Design rule checking, logic and circuit simulation. CMOS circuit delay and power analysis. High performance and low power VLSI systems. CMOS logic circuit families, adders, multipliers, memory arrays, sequential circuits, and interconnects. Clock and power distribution. Major design project to implement a RISC processor. Projects are overseen/graded by faculty and may also involve mentoring by representatives from external organizations.",
+    "workload": 3.82,
+    "tags": [],
+    "prereqs": []
+  },
+  "429": {
+    "number": 429,
+    "name": "Semiconductor Optoelectronic Devices",
+    "desc": "Materials for optoelectronics, optical processes in semiconductors, absorption and radiation, transition rates and carrier lifetime. Principles of LEDs, lasers, photodetectors, modulators and solar cells. Optoelectronic integrated circuits. Designs, demonstrations and projects related to optoelectronic device phenomena.",
+    "workload": 1.73,
+    "tags": [],
+    "prereqs": []
+  },
+  "430": {
+    "number": 430,
+    "name": "Wireless Link Design",
+    "desc": "Fundamentals of electromagnetic radiation and propagation (near earth, troposphere, ionosphere, indoor and urban); antenna parameters; practical antennas; link analysis; system noise; fading and multipath interference; applications. Course includes informative labs and a team project in practical wireless system design. Projects are overseen/graded by faculty and may also involve mentoring by representatives from external organizations.",
+    "workload": 2.88,
+    "tags": [],
+    "prereqs": []
+  },
+  "438": {
+    "number": 438,
+    "name": "Adv Lasers Lab",
+    "desc": "Construction and design of lasers; gaussian beams; nonlinear optics; fiber optics; detectors; dispersion; Fourier optics; spectroscopy. Project requires the design and set-up of a practical optical system",
+    "workload": 1.86,
+    "tags": [],
+    "prereqs": []
+  },
+  "441": {
+    "number": 441,
+    "name": "Mobile App Development for Entrepreneurs",
+    "desc": "Best practices in the software engineering of mobile applications and best practices of software entrepreneurs in the design, production and marketing of mobile apps.  Students will engage in the hands-on practice of entrepreneurship by actually inventing, building, and marketing their own mobile apps.",
+    "workload": 1.56,
+    "tags": [],
+    "prereqs": []
+  },
+  "442": {
+    "number": 442,
+    "name": "Computer Vision",
+    "desc": "An introduction to 2D and 3D computer vision. Topics include: camera models, the geometry of multiple views; shape reconstruction methods from visual cues; low-level image processing techniques such as feature\ndetection; high-level vision problems such as object recognition and scene understanding.",
+    "workload": 2.15,
+    "tags": [],
+    "prereqs": []
+  },
+  "445": {
+    "number": 445,
+    "name": "Introduction to Machine Learning",
+    "desc": "Theory and implementation of state-of-the-art machine learning algorithms for large-scale real-world applications. Topics include supervised learning (regression, classification, kernel methods, neural networks, and regularization) and unsupervised learning (clustering, density estimation, and dimensionality reduction). For each topic, mathematical principles, key algorithmic ideas, and implementation will be highlighted.",
+    "workload": 2.68,
+    "tags": [],
+    "prereqs": []
+  },
+  "448": {
+    "number": 448,
+    "name": "Applied Machine Learning for Modeling Human Behavior",
+    "desc": "Machine learning, with a focus on human behavior, across multiple modalities including speech and text. Teams complete projects based primarily on their individual interests centered on modeling an aspect of human behavior. Prior experience with speech/language or other data modeling is not needed.",
+    "workload": 1.6,
+    "tags": [],
+    "prereqs": []
+  },
+  "449": {
+    "number": 449,
+    "name": "Conversational Artificial Intelligence",
+    "desc": "The science and art of creating conversational AI spans multiple areas in computer science. Students will\nlearn about and leverage advances in these areas to create conversational virtual assistants spanning natural language processing, dialogue management, response generation, and other applications.",
+    "workload": 1,
+    "tags": [],
+    "prereqs": []
+  },
+  "452": {
+    "number": 452,
+    "name": "Digital Signal Processing Design Laboratory",
+    "desc": "DSP processors, systems-on-chip, and embedded programming for real-time audio, machine vision, control and communication. Student-driven team projects from conception to stand-alone prototypes. Optional two-credit non-project version is completed by mid-semester and includes lectures, labs, homework, and a mid-term exam. Projects are overseen/graded by faculty and may also involve mentoring by representatives from external organizations.",
+    "workload": 2.82,
+    "tags": [],
+    "prereqs": []
+  },
+  "458": {
+    "number": 458,
+    "name": "Biomedical Instrumentation and Design",
+    "desc": "Students design and construct functioning biomedical instruments.  Hardware includes instrumentation amplifiers and active filters constructed using operational amplifiers.  Signal acquisition, processing analysis and display are performed.  Project modules include measurement or respiratory volume and flow rates, biopotentials (electrocardiogram), and optical analysis of arterial blood oxygen saturation (pulse-oximetry).",
+    "workload": 1.72,
+    "tags": [],
+    "prereqs": []
+  },
+  "460": {
+    "number": 460,
+    "name": "Control Systems Analysis and Design",
+    "desc": "Basic techniques for analysis and design of controllers applicable in any industry (e.g., automotive, aerospace, computer, communication, bioengineering, power, chemical, etc.) are discussed.  Both time- and frequency-domain methods are covered.  Root locus, Nyquist- and Bode-plot techniques are outlined.  Computer-based experiments and discussion sessions are included in the course.",
+    "workload": 1.86,
+    "tags": [],
+    "prereqs": []
+  },
+  "461": {
+    "number": 461,
+    "name": "Embedded Control Systems",
+    "desc": "Basic interdisciplinary concepts needed to implement a microprocessor based control system.  Sensors and actuators.  Quadrature decoding.  Pulse width modulation.  DC motors.  Force feedback algorithms for human computer interaction.  Real time operating systems.  Networking.  Use of Matlab to model hybrid dynamical systems.  Autocode generation for rapid prototyping.",
+    "workload": 2.13,
+    "tags": [],
+    "prereqs": []
+  },
+  "467": {
+    "number": 467,
+    "name": "Autonomous Robotics Design Experience",
+    "desc": "Software methods and implementation for robot perception, world mapping, and control, using physical robots. Topics include: sensor, sensor processing, control, motion planning, localization and mapping, and forward and inverse kinematics. Multiple team projects, culminating in a major design experience (MDE) project.",
+    "workload": 3.7,
+    "tags": [],
+    "prereqs": []
+  },
+  "470": {
+    "number": 470,
+    "name": "Computer Architecture",
+    "desc": "Topics include out-of-order processors and speculation, memory hierarchies, branch prediction, virtual memory, cache design, multi-processors, and parallel processing including cache coherence and consistency. Emphasis on power and performance trade-offs. Groups design an advanced (e.g. out-of-order, multi-core, SMT) processor using an HDL.",
+    "workload": 3.89,
+    "tags": [],
+    "prereqs": []
+  },
+  "471": {
+    "number": 471,
+    "name": "Applied Parallel Programming with GPUs",
+    "desc": "Parallel computing and application development for massively parallel processors such as GPUs. Focuses on\nforms of parallelism, programming models such as CUDA, mapping computations to parallel hardware, efficient data structures, and paradigms for efficient parallel algorithms. Students will gain hands-on experience in programming assignments and projects.",
+    "workload": 2.08,
+    "tags": [],
+    "prereqs": []
+  },
+  "475": {
+    "number": 475,
+    "name": "Introduction to Cryptography",
+    "desc": "Covers fundamental concepts, algorithms, and protocols in cryptography. Topics: ancient ciphers, Shannon theory, symmetric encryption, public key encryption, hash functions, digital signatures, key distribution. Emphasizes attack models, precise definitions of security, reductions, and proof techniques.",
+    "workload": 1.68,
+    "tags": [],
+    "prereqs": []
+  },
+  "477": {
+    "number": 477,
+    "name": "Introduction to  Algorithms",
+    "desc": "Fundamental techniques for designing efficient algorithms and basic mathematical methods for analyzing their performance.  Paradigms for algorithm design:  divide-and-conquer, greedy methods, graph search techniques, dynamic programming.  Design of efficient data structures and analysis of the running time and space requirements of algorithms in the worst and average cases.",
+    "workload": 2.21,
+    "tags": [],
+    "prereqs": []
+  },
+  "481": {
+    "number": 481,
+    "name": "Software Engineering",
+    "desc": "Pragmatic aspects of the production of software systems, dealing with structuring principles, design methodologies and informal analysis.  Emphasis is given to development of large, complex software systems.  A term project usually required.",
+    "workload": 1.67,
+    "tags": [],
+    "prereqs": []
+  },
+  "482": {
+    "number": 482,
+    "name": "Introduction to Operating Systems",
+    "desc": "Operating system design and implementation:  multi-tasking; concurrency and synchronization; inter-process communication; deadlock; scheduling; resource allocation; memory and storage management; input-output; file systems; protection and security.  Students write several substantial programs dealing with concurrency and synchronization in a multi-task environment, with file systems, and with memory management.",
+    "workload": 3.74,
+    "tags": [],
+    "prereqs": []
+  },
+  "483": {
+    "number": 483,
+    "name": "Compiler Construction",
+    "desc": "Introduction to compiler construction. Topics covered will include the following: lexical scanning, parsing (top-down and bottom-up), abstract syntax trees, semantic analysis, code generation and optimization. Students will build a working compiler for a high-level programming language.",
+    "workload": 2.55,
+    "tags": [],
+    "prereqs": []
+  },
+  "484": {
+    "number": 484,
+    "name": "Database Management Systems",
+    "desc": "Concepts and methods for the design, creation, query and management of large enterprise databases.  Functions and characteristics of the leading database management systems.  Query languages such as SQL, forms, embedded SQL, and application development tools.  Database design, integrity, normalization, access methods, query optimization, transaction management and currency control and recovery.",
+    "workload": 2.01,
+    "tags": [],
+    "prereqs": []
+  },
+  "485": {
+    "number": 485,
+    "name": "Web Systems",
+    "desc": "Concepts surrounding web systems, applications, and internet scale distributed systems. Topics covered include client/server protocols, security, information retrieval and search engines, scalable data processing, and fault tolerant systems. The course has substantial projects involving development of web applications and web systems.",
+    "workload": 2.61,
+    "tags": [],
+    "prereqs": []
+  },
+  "486": {
+    "number": 486,
+    "name": "Information Retrieval and Web Search",
+    "desc": "overs background and recent advances in information retrieval (IR): indexing, processing, querying, classifying data. Basic retrieval models, algorithms, and IR system implementations. Focuses on textual data, but also looks at images/videos, music/audio, and geospatial information. Web search, including Web crawling, link analysis, search engine development, social media, and crowdsourcing.",
+    "workload": 1.44,
+    "tags": [],
+    "prereqs": []
+  },
+  "487": {
+    "number": 487,
+    "name": "Introduction to Natural Language Processing",
+    "desc": "Fundamental theories and practical methods in natural language processing (NLP). Topics include syntax and parsing, lexical semantics and compositional semantics, discourse analysis, as well as applications in information extraction, sentiment analysis, question answering, summarization, dialogue systems, machine translation, and text generation.",
+    "workload": 2.2,
+    "tags": [],
+    "prereqs": []
+  },
+  "489": {
+    "number": 489,
+    "name": "Computer Networks",
+    "desc": "Protocols and architectures of computer networks with a specific focus on the Internet. Topics include socket programming, naming and addressing, video streaming and content distribution, flow and congestion\ncontrol, routing, and cloud, datacenter, and software-defined networks. Students write several substantial programs implementing protocols at different layers of the network stack.",
+    "workload": 2.15,
+    "tags": [],
+    "prereqs": []
+  },
+  "490": {
+    "number": 490,
+    "name": "Programming Languages",
+    "desc": "Programming languages are rich mathematical structures and powerful user interfaces. Students will learn about modern languages from the perspective of both language designers and users, building up from mathematical first principles, and covering human factors in language design, language prototyping, and techniques for reasoning about program behavior.",
+    "workload": 2.48,
+    "tags": [],
+    "prereqs": []
+  },
+  "492": {
+    "number": 492,
+    "name": "Introduction to Artificial Intelligence",
+    "desc": "Introduction to the core concepts of AI, organized around building computational agents. Emphasizes the application of AI techniques. Topics include search, logic, knowledge representation, reasoning, planning, decision making under the uncertainty, and machine learning.",
+    "workload": 1.91,
+    "tags": [],
+    "prereqs": []
+  },
+  "493": {
+    "number": 493,
+    "name": "User Interface Development",
+    "desc": "Concepts and techniques for designing computer system user interfaces to be easy to learn and use, with an introduction to their implementation.  Task analysis, design of functionality, display and interaction design, and usability evaluation.  Interface programming using an object-oriented application framework.  Fluency in a standard object-oriented programming language is assumed.",
+    "workload": 2.5,
+    "tags": [],
+    "prereqs": []
+  },
+  "494": {
+    "number": 494,
+    "name": "Computer Game Design and Development",
+    "desc": "Design, development, and application of digital games. Topics include: game engines, design patterns, shaders and graphics programming, agile development methods, iterative game/ experience design, project management and resource allocation, virtual reality, classic games, multidisciplinary relationships, product exhibition, and portfolio construction. Students work in teams to develop and exhibit new games.",
+    "workload": 3.51,
+    "tags": [],
+    "prereqs": []
+  },
+  "495": {
+    "number": 495,
+    "name": "Software Development for Accessibility",
+    "desc": "Emphasizes team-based development of large, complex, software systems using established software development methodology. Systems will incorporate state-of-the-art technology dealing with disability, illness, and accessibility. Real world projects, usually in partnership with hospitals or for specific disabled clients.",
+    "workload": 1.47,
+    "tags": [],
+    "prereqs": []
+  },
+  "496": {
+    "number": 496,
+    "name": "Major Design Experience-Professionalism",
+    "desc": "Design principles for multidisciplinary team projects, team strategies, entrepreneurial skills, ethics, social and environmental awareness, and life long learning.",
+    "workload": 1.23,
+    "tags": [],
+    "prereqs": []
+  },
+  "497": {
+    "number": 497,
+    "name": "Human-Centered Software Design and Development",
+    "desc": "Team-based, user-centered design and development of complex software systems incorporating effective design strategies and project management methodologies. Topics include customer discovery, contextual inquiry, prototyping, process models, creative problem solving, inclusive thinking, team dynamics, social concerns, and testing strategies. Teams of 3-5 students complete projects based primarily on their individual interests.",
+    "workload": 1.13,
+    "tags": [],
+    "prereqs": []
+  },
+  "498": {
+    "number": 498,
+    "name": "Special Topics",
+    "desc": "Topics of current interest selected by faculty.",
+    "workload": 0,
+    "tags": [],
+    "prereqs": []
+  },
+  "501": {
+    "number": 501,
+    "name": "Probability and Random Processes",
+    "desc": "Introduction to probability and random processes.  Topics include probability axioms, sigma algebras, random vectors, expectation, probability distributions and densities, Poisson and Weiner processes, stationary processes, autocorrelation, spectral density, effects of filtering, a linear least-squares estimation, and convergence of random sequences.",
+    "workload": 0,
+    "tags": [],
+    "prereqs": []
+  },
+  "513": {
+    "number": 513,
+    "name": "Flat Pan Displays",
+    "desc": "Flat Pan Displays",
+    "workload": 0,
+    "tags": [],
+    "prereqs": []
+  },
+  "514": {
+    "number": 514,
+    "name": "Advanced MEMS Devices and Technologies",
+    "desc": "Advanced micro electro mechanical systems (MEMS) devices and technologies.  Thransduction techniques, including piezoelectric, electromagnetic, electrothermal, and resonant techniques.  Chemical, gas, and biological sensors, microfluidic and biomedical devices.  Micromachining technologies such a laser machining and microdrilling, EDM, materials such as SIC and diamond.  Sensor and actuator analysis and design through CAD.",
+    "workload": 0,
+    "tags": [],
+    "prereqs": []
+  },
+  "518": {
+    "number": 518,
+    "name": "Magnetosphere and Solar Wind",
+    "desc": "General principles of magnetohydrodynamics; theory of expanding atmospheres; properties of solar wind, interaction of solar wind with the magnetosphere of the Earth and other planets; bow shack and magnetotail, trapped particles, auroras.",
+    "workload": 0,
+    "tags": [],
+    "prereqs": []
+  },
+  "519": {
+    "number": 519,
+    "name": "Plasma Lab",
+    "desc": "Laboratory techniques for plasma ionization and diagnosis relevant to plasma processing, propulsion, vacuum electronics, and fusion. Plasma generation techniques includes: high voltage-DC, radio frequency, and e-beam discharges. Diagnostics include: Langmuir probes, microwave cavity perturbation, microwave interferometry, laser schlieren, and optical emission spectroscopy. Plasma parameters measured are: electron/ion density and electron temperature.",
+    "workload": 0,
+    "tags": [],
+    "prereqs": []
+  },
+  "521": {
+    "number": 521,
+    "name": "Solid State Devices",
+    "desc": "Physics of operation of three terminal device structures important for high frequency analog or high speed digital applications.  Emphasis on proven field-effect and bipolar-junction transistors, also including current and speculative nanoelectronic devices.  Detailed study of static current-voltage characteristics and models for small and large signal behavior.",
+    "workload": 0,
+    "tags": [],
+    "prereqs": []
+  },
+  "522": {
+    "number": 522,
+    "name": "Analog Integr Ckts",
+    "desc": "Analog summary and overview of radio architecture, noise, distortion, oscillators, LNAs and mixers, and voltage references and biasing. Review and study of integrated circuit fabrication technologies and BJT and MOS transistor models. Detailed analysis and design of analog integrated circuits including power amplifiers, voltage references, voltage regulators, rectifiers, oscillators, multipliers, mixers, phase detectors and phaselocked loops. Students will learn to understand the operating principles and design concepts for a number of important RF IC building blocks including RF amplifiers, oscillators, mixers, and references. They will implement individual design projects in a current CMOS process. The course also includes an openended team project for which groups will research a relevant topic of their choosing and design a solution including layout of RF components. Groups will give presentations of their results to the class.",
+    "workload": 0,
+    "tags": [],
+    "prereqs": []
+  },
+  "524": {
+    "number": 524,
+    "name": "Organic Electronic Devices and Applications",
+    "desc": "Organic semiconductors optical/electrical properties, how organics are deposited/patterened to achieve thin-film device structures, device physics, engineering and applications (light emission from OLEDs, various structures/adaptations for high efficiency displays/lighting), organic thin-film transistor physics, applications and organic solar cells: status, efficiency limits, reliability, as an energy harvesting technology.",
+    "workload": 0,
+    "tags": [],
+    "prereqs": []
+  },
+  "525": {
+    "number": 525,
+    "name": "Advanced Solid State Microwave Circuits",
+    "desc": "General properties and design of linear and nonlinear solid state microwave circuits including: amplifier gain blocks, low-noise, broadband and power amplifiers, oscillators, mixer and multiplier circuits, packaging, system implementation for wireless communication. Projects are overseen/graded by faculty and may also involve mentoring by representatives from external organizations.",
+    "workload": 0,
+    "tags": [],
+    "prereqs": []
+  },
+  "526": {
+    "number": 526,
+    "name": "Plasmonics",
+    "desc": "This is the study of optical phenomena related to the electromagnetic response of conductors. This course will provide basic knowledge to understand and apply principles of plasmonics. Students will be introduced to nanofabrication and characterization techniques. Optical, electronic, magnetic, thermal and biomedical applications of plasmonics will be discussed.",
+    "workload": 0,
+    "tags": [],
+    "prereqs": []
+  },
+  "531": {
+    "number": 531,
+    "name": "Antenna Thry&Des",
+    "desc": "Antenna Thry&Des",
+    "workload": 0,
+    "tags": [],
+    "prereqs": []
+  },
+  "533": {
+    "number": 533,
+    "name": "Micro Meas Lab",
+    "desc": "Micro Meas Lab",
+    "workload": 0,
+    "tags": [],
+    "prereqs": []
+  },
+  "535": {
+    "number": 535,
+    "name": "Power System Dynamics and Control",
+    "desc": "The course introduces angle and voltage stability concepts and considers control strategies for improving dynamic performance. It provides an overview of nonlinear dynamical systems, Lyapunov methods and bifurcation analysis. Models of dynamical devices are developed. Small disturbance (linear) analysis techniques are presented, along with methods for accessing large disturbance (nonlinear) behavior.",
+    "workload": 0,
+    "tags": [],
+    "prereqs": []
+  },
+  "539": {
+    "number": 539,
+    "name": "Lasers",
+    "desc": "Lasers",
+    "workload": 0,
+    "tags": [],
+    "prereqs": []
+  },
+  "541": {
+    "number": 541,
+    "name": "Applied Quantum Mechanics II",
+    "desc": "Continuation of nonrelativistic quantum mechanics. Advanced angular momentum theory, second quantization, non-relativistic quantum electrodynamics, advanced scattering theory, density matrix formalism, reservoir theory.",
+    "workload": 0,
+    "tags": [],
+    "prereqs": []
+  },
+  "545": {
+    "number": 545,
+    "name": "Machine Learn (CSE)",
+    "desc": "Fundamentals of supervised, unsupervised, and sequential learning, including linear and nonlinear regression, logistic regression, support vector machines and kernel methods, decision trees, ensemble methods,\nneural networks and deep learning, dimension reduction, clustering, and probabilistic models. Emphasis on implementation and application to real-world data. Includes algorithms and derivations from fundamental principles.",
+    "workload": 0,
+    "tags": [],
+    "prereqs": []
+  },
+  "547": {
+    "number": 547,
+    "name": "Incentives and Strategic Behavior in Computational Systems",
+    "desc": "Modeling and analysis of strategic decision environments from combined computational and economic perspectives. Essential elements of game theory, including solution concepts and equilibrium computation. Design and analysis of mechanisms for problems motivated by areas such as electronic commerce, social computing, social choice, and information elicitation.",
+    "workload": 0,
+    "tags": [],
+    "prereqs": []
+  },
+  "548": {
+    "number": 548,
+    "name": "Information Visualization",
+    "desc": "Introduction to information visualization. Topics include data and image models, multidimensional and multivariate data, design principles for visualization, hierarchical, network, textual and collaborative visualization, the visualization pipeline, data processing for visualization, visual representations, visualization system interaction design, and impact of perception. Emphasizes construction of systems using graphics application programming interfaces (APIs) and analysis tools.",
+    "workload": 0,
+    "tags": [],
+    "prereqs": []
+  },
+  "553": {
+    "number": 553,
+    "name": "Machine Learn (ECE)",
+    "desc": "Fundamentals of supervised, unsupervised, and sequential learning, including linear and nonlinear regression, logistic regression, support vector machines and kernel methods, decision trees, ensemble methods, neural networks and deep learning, dimension reduction, clustering, and probabilistic models. Emphasis on algorithms and their derivation from fundamental principles.  Includes applications to real-world data. Projects are overseen/graded by faculty and may also involve mentoring by representatives from external organizations.",
+    "workload": 0,
+    "tags": [],
+    "prereqs": []
+  },
+  "557": {
+    "number": 557,
+    "name": "Communication Networks",
+    "desc": "System architectures.  Data link control:  error correction, protocol analysis, framing.  Message delay:  Markov processes, queuing, delays in statistical multiplexing, multiple users with reservations, limited service, priorities.  Networks delay; Kleinrock independence, reversibility, traffic flows, throughout analysis, Jackson networks.  Multiple access networks:  ALOHA and splitting protocols, carrier sensing, multi-access reservations.",
+    "workload": 0,
+    "tags": [],
+    "prereqs": []
+  },
+  "559": {
+    "number": 559,
+    "name": "Optimization Methods in Signal Processing and Machine Learning",
+    "desc": "Theory and application of optimization methods for signal and image processing and machine learning problems. Algorithms include gradient-based methods, proximal methods, and duality-based methods. Applications include signal denoising, compressed sensing, matrix completion, robust regression, and classifier design.",
+    "workload": 0,
+    "tags": [],
+    "prereqs": []
+  },
+  "560": {
+    "number": 560,
+    "name": "Linear Systems Theory",
+    "desc": "Linear spaces and linear operators.  Bases, subspaces, elgenvalues and elgenvectors, canonical forms.  Linear differential and difference equations.  Mathematical representations: state equations, transfer functions, impulse response, matrix fraction and polynomial descriptions.  System-theoretic concepts: causality, controllability, observability, realizations, canonical decomposition, stability.",
+    "workload": 0,
+    "tags": [],
+    "prereqs": []
+  },
+  "562": {
+    "number": 562,
+    "name": "Nl Sys&Con",
+    "desc": "Introduction to the analysis and design of nonlinear systems and nonlinear control systems. Stability analysis using Liapunov, input-output and asymptotic methods. Design of stabilizing controllers using a variety of methods: linearization, absolute stability theory, vibrational control, sliding modes and feedback linearization.",
+    "workload": 0,
+    "tags": [],
+    "prereqs": []
+  },
+  "565": {
+    "number": 565,
+    "name": "Linear Feedback Control Systems",
+    "desc": "Control design concepts for linear multivariable systems.  Review of single variable systems and extensions to multivariable systems.  Purpose of feedback.  Sensitivity, robustness, and design trade-offs.  Design formulations using both frequency domain and state space descriptions.  Pole placement/observer design.  Linear quadratic Guassian based design methods.  Design problems unique to multivariable systems.",
+    "workload": 0,
+    "tags": [],
+    "prereqs": []
+  },
+  "567": {
+    "number": 567,
+    "name": "Robotic Kinematics and Dynamics",
+    "desc": "Geometry, kinematics, differential kinematics, dynamics, and control of robot manipulators.  The mathematical tools required to describe spatial motion of a rigid body will be presented in full.  Motion planning including obstacle avoidance is also covered.",
+    "workload": 0,
+    "tags": [],
+    "prereqs": []
+  },
+  "568": {
+    "number": 568,
+    "name": "Mobile Robotics:  Methods and Algorithms",
+    "desc": "Theory and application of probabilistic techniques for autonomous mobile robotics.  This course will present and critically examine contemporary algorithms for robot perception (using a variety of modalities), state estimation, mapping, and path planning.  Topics include Bayesian filtering; stochastic representations of the environment; motion and sensor models for mobile robots; algorithms for mapping, localization, planning and control in the presense of uncertainty; application to autonomous marine, ground, and air vehicles.",
+    "workload": 0,
+    "tags": [],
+    "prereqs": []
+  },
+  "570": {
+    "number": 570,
+    "name": "Parallel Computer Architecture",
+    "desc": "Architecture for explicit parallelism.  Multithreaded processors, small- and large- scale multiprocessor systems.  Shared-memory coherence and consistency.  Effect of architecture on communication latency, bandwidth, and overhead.  Latency tolerance techniques.  Interconnection networks.  Case studies.  Term projects.",
+    "workload": 0,
+    "tags": [],
+    "prereqs": []
+  },
+  "583": {
+    "number": 583,
+    "name": "Advanced Compilers",
+    "desc": "In-depth study of compiler backend design for high-performance architectures.  Topics include control-flow and data-flow analysis, optimization, instruction scheduling, register allocation.  Advanced topics include memory hierarchy management, instruction-level parallelism, predicated and speculative execution.  The class focus is processor-specific compilation techniques, thus familiarity with both computer architecture and compilers is recommended.",
+    "workload": 0,
+    "tags": [],
+    "prereqs": []
+  },
+  "586": {
+    "number": 586,
+    "name": "Design and Analysis of Algorithms",
+    "desc": "Design of algorithms for non-numeric problems involving sorting, searching, scheduling, graph theory, and geometry.  Design techniques such as approximation, branch-and-bound, divide-and-conquer dynamic programming, greed, and randomization applied to polynomial and NP-hard problems.  Analysis of time and space utilization.",
+    "workload": 0,
+    "tags": [],
+    "prereqs": []
+  },
+  "588": {
+    "number": 588,
+    "name": "Computer and Network Security",
+    "desc": "Survey of advanced topics and research issues in computer and network security.  Topics will be drawn from a variety of areas of such as mandatory and discretionary security policies, secure storage, security darnels, trust management, preventing software vulnerabilities, applied cryptography, network security.",
+    "workload": 0,
+    "tags": [],
+    "prereqs": []
+  },
+  "592": {
+    "number": 592,
+    "name": "Foundations of Artificial Intelligence",
+    "desc": "An advanced introduction to AI emphasizing its theoretical underpinnings. Topics include search, logic, knowledge representation, reasoning planning, decision making under uncertainty, and machine learning.",
+    "workload": 0,
+    "tags": [],
+    "prereqs": []
+  },
+  "598": {
+    "number": 598,
+    "name": "Special Topics",
+    "desc": "Topics of current interest in electrical engineering and computer science. Lectures, seminar, or laboratory. Can be taken more than once for credit.",
+    "workload": 0,
+    "tags": [],
+    "prereqs": []
+  },
+  "627": {
+    "number": 627,
+    "name": "VLSI Design II",
+    "desc": "Advanced very large scale integrated (VLSI) circuit design.  Design methodologies (architectural simulation, hardware description language design entry, silicon compilation, and verification), microarchitectures, interconnect, packaging, noise sources, circuit techniques, design for testability, design rules, VLSI technologies, and yield.  Projects in chip design.",
+    "workload": 0,
+    "tags": [],
+    "prereqs": []
+  },
+  "634": {
+    "number": 634,
+    "name": "Nonlinear Optics",
+    "desc": "Formalism of wave propagation in nonlinear media; susceptibility tensor; second harmonic generation and three-wave mixing; phase matching; third order nonlinearities and four-wave mixing processes; stimulated Raman and Brillouin scattering. Special topics: nonlinear optics in fibers, including solitons and self-phase modulation.",
+    "workload": 0,
+    "tags": [],
+    "prereqs": []
+  },
+  "644": {
+    "number": 644,
+    "name": "Computational Modeling of Cognition",
+    "desc": "Computational Modeling of Cognition",
+    "workload": 0,
+    "tags": [],
+    "prereqs": []
+  },
+  "692": {
+    "number": 692,
+    "name": "Advanced Artificial Intelligence",
+    "desc": "Exploration of advanced topics in Artificial Intelligence, intended as preparation for research in the field. Emphasizes research methods and practice, through explicit instruction, analysis of current literature, and a term project devoted to replicating published findings. Course work comprises extensive reading, research and writing assignments, presentations, quizzes, and the replication project.",
+    "workload": 0,
+    "tags": [],
+    "prereqs": []
+  }
+}
