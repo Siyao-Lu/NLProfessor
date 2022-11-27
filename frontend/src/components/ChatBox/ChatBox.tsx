@@ -14,10 +14,15 @@ import InputGroup from "react-bootstrap/InputGroup";
 import "./ChatBox.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
+type msg = {
+  from: string;
+  content: string;
+};
+
 export default function ChatBox() {
   const userMsgRef = useRef<any>(null);
   const [userMsg, setUserMsg] = useState("");
-  const [displayMsg, setDisplayMsg] = useState([] as any);
+  const [displayMsg, setDisplayMsg] = useState([] as msg[]);
 
   const delay = (ms: number | undefined) =>
     new Promise((resolve) => setTimeout(resolve, ms));
@@ -27,19 +32,19 @@ export default function ChatBox() {
     const res = await axios.post(`/api/receive`, { userMsg: userMsg });
     console.log(res);
     console.log(userMsg);
-    setDisplayMsg((list: any) => [...list, res.data]);
+    setDisplayMsg((list: any) => [...list, { from: "bot", content: res.data }]);
   }, [userMsg, setDisplayMsg]);
 
   useEffect(() => {
     const initBotMsg =
       "Hi, I am NLProfessor, your smart course recommender, to start off, what is your current class standing?";
-    setDisplayMsg([initBotMsg]);
+    setDisplayMsg([{ from: "bot", content: initBotMsg }]);
   }, []);
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
     e.target.reset();
-    setDisplayMsg((list: any) => [...list, userMsg]);
+    setDisplayMsg((list: any) => [...list, { from: "user", content: userMsg }]);
     sendMSG();
   };
 
@@ -49,11 +54,22 @@ export default function ChatBox() {
         <Card>
           <div className="chat-inner-wrapper">
             <div className="chat-body">
-              {displayMsg.map((msg: string) => (
-                <div className="message text-wrap bg-secondary bg-opacity-25 rounded-4">
-                  <div>{msg}</div>
-                </div>
-              ))}
+              {displayMsg.map((msg) =>
+                msg.from === "bot" ? (
+                  <div className="bot-wrapper msg-bot">
+                    <div className="bot-avatar bg-primary text-primary bg-opacity-25 rounded-circle">
+                      <i className="bi bi-robot"></i>
+                    </div>
+                    <div className="message msg-user text-wrap bg-secondary bg-opacity-25 rounded-4">
+                      <div>{msg.content}</div>
+                    </div>
+                  </div>
+                ) : (
+                  <div className="message msg-user text-wrap bg-primary text-primary bg-opacity-25 rounded-4">
+                    <div>{msg.content}</div>
+                  </div>
+                )
+              )}
             </div>
             <div className="bottom-bar">
               <div className="input-bar">
