@@ -51,7 +51,7 @@ export default function ChatBox() {
   return (
     <div className="chat-box-wrapper">
       <div className="chat-box">
-        <Card>
+        <Card className="chat-box-card">
           <div className="chat-inner-wrapper">
             <div className="chat-body">
               {displayMsg.map((msg) =>
