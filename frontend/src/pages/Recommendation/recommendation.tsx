@@ -2,6 +2,7 @@ import React from "react";
 import { RecCourse } from "../../components/RecCourse/RecCourse";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "./recommendation.css";
+import styles from "./rec-nav.module.css";
 
 export type CourseRec = {
   basedOn: string[];
@@ -20,6 +21,11 @@ type AppProps = {
 const Recommendation = ({ courses, basedOn }: AppProps) => {
   return (
     <div className="rec-page">
+      <style>
+        {
+          ".navbar { background-color: #F1F6FD !important; box-shadow: 0 0 .5em rgba(0, 0, 0, .5);"
+        }
+      </style>
       <div className="rec-title">
         <div>
           <h1 className="text-center">Your personalized recommendations</h1>

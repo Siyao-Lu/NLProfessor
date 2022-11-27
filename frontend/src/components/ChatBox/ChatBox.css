@@ -1,0 +1,74 @@
+.chat-box-wrapper {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: minmax(1rem, 1fr) minmax(auto, 70ch) minmax(1rem, 1fr);
+    grid-gap: 1rem;
+}
+
+.chat-box {
+    grid-column: 2;
+    height: 90%;
+    align-self: center;
+    justify-self: center;
+    display: grid;
+    overflow: hidden;
+}
+
+.chat-box-card {
+    overflow: hidden;
+}
+
+.chat-inner-wrapper {
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 5rem;
+}
+
+
+.bottom-bar {
+    align-self: center;
+    justify-self: center;
+    align-items: center;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 3fr minmax(17ch, 1fr);
+}
+
+.chat-body {
+    display: grid;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    grid-auto-rows: max-content;
+    overflow-y: scroll;
+}
+
+.message {
+    max-width: 50ch;
+    width: fit-content;
+    height: fit-content;
+    padding: 1ch;
+    display: grid;
+    align-items: center;
+    justify-items: start;
+    align-self: center;
+}
+
+.bot-avatar {
+    width: 2rem;
+    height: 2rem;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin: 1rem;
+}
+
+.bot-wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-self: start;
+}
+
+.msg-user {
+    justify-self: end;
+
+}

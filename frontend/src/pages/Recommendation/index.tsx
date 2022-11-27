@@ -1,62 +1,21 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import Recommendation from "./recommendation";
 
 const RecommendationList = () => {
+  const [data, setData] = useState();
+  useEffect(() => {
+    axios.get(`/api/send`)
+      .then(res => {
+        setData(res.data);
+      })
+  }, []);
   return (
     <div>
-      <Recommendation
-        courses={[
-          {
-            basedOn: ["machine learning", "team"],
-            courseName: "Conversational AI",
-            courseDept: "EECS",
-            courseNum: 449,
-            courseDesc: "Very goo d course",
-            workload: 0,
-          },
-          {
-            basedOn: ["junior", "team"],
-            courseName: "Web Systems",
-            courseDept: "EECS",
-            courseNum: 485,
-            courseDesc: "Very goo d course",
-            workload: 1,
-          },
-          {
-            basedOn: ["machine learning"],
-            courseName: "Intro Natural Language processing",
-            courseDept: "EECS",
-            courseNum: 487,
-            courseDesc: "Very goo d course",
-            workload: 2,
-          },
-          {
-            basedOn: ["junior"],
-            courseName: "Intro Algorithms",
-            courseDept: "EECS",
-            courseNum: 477,
-            courseDesc: "Very goo d course",
-            workload: 3,
-          },
-          {
-            basedOn: ["machine learning", "team"],
-            courseName: "Conversational AI",
-            courseDept: "EECS",
-            courseNum: 449,
-            courseDesc: "Very goo d course",
-            workload: 4,
-          },
-          {
-            basedOn: ["machine learning", "team"],
-            courseName: "Conversational AI",
-            courseDept: "EECS",
-            courseNum: 449,
-            courseDesc: "Very goo d course",
-            workload: 0,
-          },
-        ]}
-        basedOn={["junior", "machine learning", "team"]}
-      />
+      {data &&
+        <Recommendation
+          courses={data["courses"]} basedOn={data["basedOn"]}
+        />}
     </div>
   );
 };
