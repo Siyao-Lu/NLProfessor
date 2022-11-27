@@ -1,6 +1,6 @@
-#Search
+# Search
 
-###Based on TF-IDF weights and Inverted Indexing
+### Based on TF-IDF weights and Inverted Indexing
 
 example:
 -
