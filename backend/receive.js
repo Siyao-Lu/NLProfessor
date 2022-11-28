@@ -29,7 +29,12 @@ receive.post("/api/receive", async (req, res) => {
 
   const responses = await sessionClient.detectIntent(request);
 
-  const responseStr = responses[0].queryResult.fulfillmentText;
+  console.log(JSON.stringify(responses));
+
+  const responseStr = responses[0].queryResult.fulfillmentText.replace(
+    ", ,",
+    ", "
+  );
 
   res.json(responseStr);
 });

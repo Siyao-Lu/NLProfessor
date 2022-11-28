@@ -1,10 +1,4 @@
-import React, {
-  useState,
-  useEffect,
-  useRef,
-  useMemo,
-  useCallback,
-} from "react";
+import React, { useState, useEffect, useRef, useCallback } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import Button from "react-bootstrap/Button";
@@ -22,6 +16,7 @@ type msg = {
 const SESSION_ID = Math.random().toString(36).slice(2);
 
 export default function ChatBox() {
+  const bottomRef = useRef<null | HTMLDivElement>(null);
   const userMsgRef = useRef<any>(null);
   const [userMsg, setUserMsg] = useState("");
   const [displayMsg, setDisplayMsg] = useState([] as msg[]);
@@ -40,10 +35,14 @@ export default function ChatBox() {
   }, [userMsg, setDisplayMsg]);
 
   useEffect(() => {
-    const initBotMsg =
-      "Hi, I am NLProfessor, your smart course recommender, to start off, what is your current class standing?";
+    const initBotMsg = "Welcome to NLProfessor! What is your name?";
     setDisplayMsg([{ from: "bot", content: initBotMsg }]);
+    bottomRef.current?.scrollIntoView({ behavior: "smooth" });
   }, []);
+
+  useEffect(() => {
+    bottomRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [displayMsg]);
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
@@ -74,6 +73,7 @@ export default function ChatBox() {
                   </div>
                 )
               )}
+              <div ref={bottomRef} />
             </div>
             <div className="bottom-bar">
               <div className="input-bar">
