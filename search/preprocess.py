@@ -1,11 +1,5 @@
-# Name: Hezheng Fan
-# Unique Name: hzfan
-
-import sys
-import os
 import re
 from PorterStemmer import PorterStemmer
-import collections
 
 def removeSGML(text):
     """
@@ -16,7 +10,6 @@ def removeSGML(text):
     :return: result
     Match anything from '<' to '>' and remove
     """
-    result = None
     match = re.compile("<.*?>") # remove SGML by matching this pattern
     result = re.sub(match, '', text)
     return result
@@ -133,148 +126,3 @@ def stemWords(token_list):
             stemmed_tokens.append(ps.stem(token, 0, len(token)-1))
     return stemmed_tokens
 
-
-
-def main():
-    """
-    driver program executes following steps
-    i. open the folder containing the data collection, provided as the first argument on the command line
-       (e.g., cranfieldDocs/), and read one file at a time from this folder.
-    ii. for each file, apply, in order: removeSGML, tokenizeText, removeStopwords, stemWords
-    iii. in addition, write code to determine (this is after step ii above):
-    - the total number of words in the collection (numbers should be counted as words)
-    - vocabulary size (i.e., number of unique terms)
-    - most frequent 50 words in the collection, along with their frequencies
-      (list in reverse order of their frequency, i.e., from most to least frequent)
-    :return:
-    """
-    # step i and ii
-    folder = sys.argv[1]
-    files = os.listdir(path=folder)
-    merged_stemword_list = []
-    # print(files[1])
-    for file in files:
-        with open(folder+file, 'r') as fp:
-            text = fp.read()
-        text = removeSGML(text)
-        token_list = tokenizeText(text)
-        token_list = removeStopwords(token_list)
-        stemword_list = stemWords(token_list)
-        merged_stemword_list += stemword_list
-    word_count_list = collections.Counter(merged_stemword_list)
-
-    # step iii
-    word_count = sum(word_count_list.values())
-    vocabulary_size = len(set(word_count_list.keys()))
-
-    # for the most common word part, since I did some extra process the frequencies will differ from one that only
-    # perform the basic requirement of the spec. i.e.'number)' -> 'number' ')' and ')' is removed during step ii
-    k_word_list = []
-    k_word_freq_list = []
-    for k, v in word_count_list.most_common(50):
-        k_word_list.append(k)
-        k_word_freq_list.append(v)
-
-    # write to file preprocess.output
-    with open('preprocess.output', 'w') as f:
-        f.write("Words " + str(word_count) + '\n')
-        f.write("Vocabulary " + str(vocabulary_size) + '\n')
-        f.write("Top 50 words\n")
-
-        for i in range(len(k_word_list)):
-            f.write(k_word_list[i] + " " + str(k_word_freq_list[i]) + '\n')
-
-    answer_helper(word_count, vocabulary_size, word_count_list, folder, files)
-
-
-def answer_helper(word_num, vocab_size, word_count_list, folder, files):
-
-    cur_word_count = 0
-    unique_word_count = 0
-    for k, v in word_count_list.most_common():
-        if cur_word_count < 0.25*word_num:
-            break
-        cur_word_count += v
-        unique_word_count += 1
-
-    subset_size = 100
-    subset_range = [[50, 550], [600, 1100]]
-    range_stats = []
-
-    merged_stemword_list = []
-    # print(files[1])
-    for cur_range in subset_range:
-        for file in range(cur_range[0], cur_range[1]):
-            with open(folder+files[file], 'r') as fp:
-                # print(folder + files[file])
-                text = fp.read()
-            text = removeSGML(text)
-            token_list = tokenizeText(text)
-            token_list = removeStopwords(token_list)
-            stemword_list = stemWords(token_list)
-            merged_stemword_list += stemword_list
-        word_count_list = collections.Counter(merged_stemword_list)
-        word_count = sum(word_count_list.values())
-        vocabulary_size = len(set(word_count_list.keys()))
-        range_stats.append([word_count, vocabulary_size])
-
-    with open('preprocess.answers', 'w') as f:
-        f.write("Total Number of Words in Cranfield collection: " + str(word_num) + "\n")
-        f.write("Vocabulary Size in Cranfield collection: " + str(vocab_size) + "\n")
-        f.write("\n")
-        f.write("The minimum number of unique words in the Cranfield collection accounting for 25% of the total number of words in the collection?" +
-                      str(unique_word_count) + "\n")
-        f.write("\n")
-        f.write("Subset Statistics\n")
-        for i in range(len(subset_range)):
-            f.write("sample size: " + str(subset_range[i][1]-subset_range[i][0]) + "\n")
-            f.write("Total Number of Words in "+"Cranfield collection: " + str(range_stats[i][0]) + "\n")
-            f.write("Vocabulary Size in " + "Cranfield collection: " + str(range_stats[i][1]) + "\n")
-            f.write("\n")
-
-
-if __name__ == "__main__":
-    main()
-
-
-
-
-
-
-
-
-    """
-    # test code that works through all essential functions
-    folder = sys.argv[1]
-    files = os.listdir(path=folder)
-    # print(files[1])
-    with open(folder+files[1], 'r') as fp:
-        text = fp.read()
-    text = removeSGML(text)
-    # text = 'i\'ve The current\'s /population of U.S.A.S i-\ns 332,087.410 as of Friday. 01/22/2021, based on Worldometer elaboration of the latest United Nations\' data.'
-    token_list = tokenizeText(text)
-    token_list = removeStopwords(token_list)
-    print(token_list)
-    stemword_list = stemWords(token_list)
-    print(stemword_list)
-    """
-
-    # an effective test for tokenizeText
-    # text = 'i\'ve The current\'s /population of U.S.A.S i-\ns 332,087.410 as of Friday. 01/22/2021, based on Worldometer elaboration of the latest United Nations\' data.'
-
-
-
-    #print(re.sub("([A-Z]\.*){2,}s?", "", text))
-    #print(text)
-    #print(tokenizeText(text))
-
-
-
-    """
-    sample code on how to modify strings
-    str1 = "mystring"
-    list1 = list(str1)
-    list1[5] = 'u'
-    str1 = ''.join(list1)
-    print(str1)
-    """
