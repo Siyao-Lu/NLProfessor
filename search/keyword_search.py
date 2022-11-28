@@ -1,10 +1,4 @@
 ######################################################
-# weighting scheme:
-# spec choice: tfc.tfx
-# my choice: nfc.nfx
-######################################################
-
-######################################################
 # inverted index structure design:
 # Use python dictionary, since during indexing documents, the program will do random access a lot,
 # thus in order to reduce access time, use a hashmap structure, which in python is dict.
@@ -23,7 +17,7 @@
 
 import sys
 import collections
-import preprocess
+from . import preprocess
 import math
 import numpy as np
 import json
@@ -149,7 +143,6 @@ def retrieveDocuments(query, index_map, docs_scheme, query_scheme, weights_matri
     token_list = preprocess.removeStopwords(token_list)
     token_list = preprocess.stemWords(token_list)
     counter = collections.Counter(token_list)
-    counter_seq = list(counter.keys())
 
     # find the set of docs that have words in query
     doc_set = set()
@@ -159,8 +152,6 @@ def retrieveDocuments(query, index_map, docs_scheme, query_scheme, weights_matri
             doc_set.update(index_map[word]['doc_list'].keys())
         else:
             pass
-
-
 
     # calculate query weights
     query_weights = []
@@ -200,52 +191,41 @@ def retrieveDocuments(query, index_map, docs_scheme, query_scheme, weights_matri
     return doc_sim_dict
 
 
+class classes_db:
+    def __init__(self, db_file, docs_scheme="tfc", query_scheme="tfx"):
+        self.docs_scheme = docs_scheme
+        self.query_scheme = query_scheme
+        with open(db_file) as json_file:
+            self.data = json.load(json_file)
 
+        # init a inverted index structure
+        self.index_map = {'doc_count': 0}
 
+        # sort in alphanumeric list order to better accommodate later output
+        self.classes = sorted(self.data.keys())
+        for _class in self.classes:
+            text = self.data[_class]['name'] + ' ' + self.data[_class]['desc']
+            self.index_map = indexDocument(text, docs_scheme, query_scheme, self.index_map)
+            self.index_map['doc_count'] += 1
 
+        self.weights_matrix, self.doc_length, self.word_loc_map = documentWeightsHelper(self.docs_scheme, self.index_map)
 
-
-
-
-
-def main():
-    docs_scheme = "tfc"
-    query_scheme = "tfx"
-    db_file = sys.argv[1]
-    query = ' '.join(sys.argv[2:])
- 
-
-
-    # Opening JSON file
-    with open(db_file) as json_file:
-        data = json.load(json_file)
-
-    # init a inverted index structure
-    index_map = {'doc_count': 0}
-
-    # sort in alphanumeric list order to better accommodate later output
-    classes = sorted(data.keys())
-    for _class in classes:
-        text = data[_class]['name'] + ' ' + data[_class]['desc']
-        index_map = indexDocument(text, docs_scheme, query_scheme, index_map)
-        index_map['doc_count'] += 1
-
-    weights_matrix, doc_length, word_loc_map = documentWeightsHelper(docs_scheme, index_map)
-
-    query_doc_dict = {}
-    doc_sim_dict = retrieveDocuments(query, index_map, docs_scheme, query_scheme,
-                        weights_matrix, doc_length, word_loc_map)
-    candidates = doc_sim_dict
-    doc_list, sim_list = zip(*candidates.items()) # makes sure sequences match
-    sort_idx = np.argsort(-np.array(sim_list))
-    doc_list = np.array(doc_list)[sort_idx]
-    sim_list = np.array(sim_list)[sort_idx]
-    for i in range(len(doc_list[:5])):
-        print(data[classes[doc_list[i]]])
-
+    def search(self, query):
+        ranking = []
+        doc_sim_dict = retrieveDocuments(query, self.index_map, self.docs_scheme, self.query_scheme,
+                                         self.weights_matrix, self.doc_length, self.word_loc_map)
+        candidates = doc_sim_dict
+        doc_list, sim_list = zip(*candidates.items())  # makes sure sequences match
+        sort_idx = np.argsort(-np.array(sim_list))
+        doc_list = np.array(doc_list)[sort_idx]
+        for i in range(len(doc_list[:6])):
+            ranking.append(self.data[self.classes[doc_list[i]]])
+        return ranking
 
 
 
 if __name__ == '__main__':
-    main()
+    db = classes_db(db_file=sys.argv[1])
+    for q in ["machine learning", "artificial intelligence"]:
+        print(db.search(q))
 

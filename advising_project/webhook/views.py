@@ -4,6 +4,10 @@ from django.views.decorators.csrf import csrf_exempt
 import json
 from .models import *
 from icecream import ic
+import sys
+import os
+sys.path.append(os.getcwd())
+from search.keyword_search import classes_db
 
 # define home function
 def home(request):
@@ -42,3 +46,24 @@ def add_major_year(params):
     stud.major = params['major']
     stud.year = params['year']
     stud.save()
+
+def search_class(keywords: str, info: list=["number", "name", "desc", "workload"], db = None) -> list:
+    """Search classes based on keywords.
+
+    Input:
+    keywords: string, i.e. "Machine Learning"
+    info: list, info returned associated with each class in the returned list
+
+    Output:
+    A list consists of 6 relevant classes sorted by tf-idf score.
+    """
+    db = classes_db(db_file="advising_project/webhook/json/classes.json")
+    init_result = db.search(keywords)
+    post_process = []
+    for _dict in init_result:
+        new_dict = {}
+        for _key in info:
+            new_dict[_key] = _dict[_key]
+        post_process.append(new_dict)
+    return post_process
+
