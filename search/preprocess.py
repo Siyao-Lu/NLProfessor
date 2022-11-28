@@ -1,5 +1,5 @@
 import re
-from PorterStemmer import PorterStemmer
+from .PorterStemmer import PorterStemmer
 
 def removeSGML(text):
     """

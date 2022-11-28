@@ -17,7 +17,7 @@
 
 import sys
 import collections
-import preprocess
+from . import preprocess
 import math
 import numpy as np
 import json
