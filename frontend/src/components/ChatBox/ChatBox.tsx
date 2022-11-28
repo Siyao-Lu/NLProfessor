@@ -11,6 +11,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 type msg = {
   from: string;
   content: string;
+  loading: boolean;
 };
 
 const SESSION_ID = Math.random().toString(36).slice(2);
@@ -21,22 +22,28 @@ export default function ChatBox() {
   const [userMsg, setUserMsg] = useState("");
   const [displayMsg, setDisplayMsg] = useState([] as msg[]);
 
-  const delay = (ms: number | undefined) =>
-    new Promise((resolve) => setTimeout(resolve, ms));
-
   const sendMSG = useCallback(async () => {
-    await delay(1000);
+    setDisplayMsg((list: msg[]) => [
+      ...list,
+      { from: "bot", content: "", loading: true },
+    ]);
     console.log(SESSION_ID);
     const res = await axios.post(`/api/receive`, {
       userMsg: userMsg,
       sessionId: SESSION_ID,
     });
-    setDisplayMsg((list: any) => [...list, { from: "bot", content: res.data }]);
+    setDisplayMsg((list: msg[]) =>
+      list.map((val) =>
+        val.loading
+          ? Object.assign({}, val, { loading: false, content: res.data })
+          : val
+      )
+    );
   }, [userMsg, setDisplayMsg]);
 
   useEffect(() => {
     const initBotMsg = "Welcome to NLProfessor! What is your name?";
-    setDisplayMsg([{ from: "bot", content: initBotMsg }]);
+    setDisplayMsg([{ from: "bot", content: initBotMsg, loading: false }]);
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });
   }, []);
 
@@ -63,7 +70,11 @@ export default function ChatBox() {
                     <div className="bot-avatar bg-primary text-primary bg-opacity-25 rounded-circle">
                       <i className="bi bi-robot"></i>
                     </div>
-                    <div className="message msg-user text-wrap bg-secondary bg-opacity-25 rounded-4">
+                    <div
+                      className={"message msg-user text-wrap bg-secondary bg-opacity-25 rounded-4".concat(
+                        msg.loading ? " loading-msg" : ""
+                      )}
+                    >
                       <div>{msg.content}</div>
                     </div>
                   </div>
