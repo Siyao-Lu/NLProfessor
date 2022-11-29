@@ -6,10 +6,10 @@ import styles from "./rec-nav.module.css";
 
 export type CourseRec = {
   basedOn: string[];
-  courseName: string;
+  name: string;
   courseDept: string;
-  courseDesc: string;
-  courseNum: number;
+  desc: string;
+  number: number;
   workload: number;
 };
 
@@ -38,10 +38,10 @@ const Recommendation = ({ courses, basedOn }: AppProps) => {
         {courses.map((course) => (
           <RecCourse
             basedOn={course.basedOn}
-            courseName={course.courseName}
+            courseName={course.name}
             courseDept={course.courseDept}
-            courseNum={course.courseNum}
-            courseDesc={course.courseDesc}
+            courseNum={course.number}
+            courseDesc={course.desc}
             workload={course.workload}
           />
         ))}
