@@ -97,7 +97,13 @@ export default function ChatBox() {
                       type="text"
                       onChange={(e) => setUserMsg(e.target.value)}
                     />
-                    <Button variant="outline-primary" type="reset">
+                    <Button
+                      variant="outline-primary"
+                      type="reset"
+                      onClick={() => {
+                        window.location.reload();
+                      }}
+                    >
                       Reset
                     </Button>
                     <Button variant="outline-primary" type="submit">
