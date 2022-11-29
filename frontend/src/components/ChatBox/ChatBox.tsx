@@ -28,7 +28,7 @@ export default function ChatBox() {
       { from: "bot", content: "", loading: true },
     ]);
     console.log(SESSION_ID);
-    const res = await axios.post(`/api/receive`, {
+    const res = await axios.post(`http://localhost:3001/api/receive`, {
       userMsg: userMsg,
       sessionId: SESSION_ID,
     });
