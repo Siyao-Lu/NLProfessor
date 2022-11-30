@@ -16,9 +16,10 @@ export type CourseRec = {
 type AppProps = {
   courses: CourseRec[];
   basedOn: string[];
+  name: string;
 };
 
-const Recommendation = ({ courses, basedOn }: AppProps) => {
+const Recommendation = ({ courses, basedOn, name }: AppProps) => {
   return (
     <div className="rec-page">
       <style>
@@ -28,7 +29,7 @@ const Recommendation = ({ courses, basedOn }: AppProps) => {
       </style>
       <div className="rec-title">
         <div>
-          <h1 className="text-center">Your personalized recommendations</h1>
+          <h1 className="text-center">{name}'s personalized recommendations</h1>
         </div>
         <div className="text-muted text-center">
           Key words: {basedOn.join(", ")}
