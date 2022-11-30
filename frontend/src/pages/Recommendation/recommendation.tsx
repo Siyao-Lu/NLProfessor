@@ -29,7 +29,10 @@ const Recommendation = ({ courses, basedOn, name }: AppProps) => {
       </style>
       <div className="rec-title">
         <div>
-          <h1 className="text-center">{name}'s personalized recommendations</h1>
+          <h1 className="text-center">
+            {name.charAt(0).toUpperCase() + name.slice(1)}'s personalized
+            recommendations
+          </h1>
         </div>
         <div className="text-muted text-center">
           Key words: {basedOn.join(", ")}

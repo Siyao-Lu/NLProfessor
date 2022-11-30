@@ -45,7 +45,7 @@ export const RecCourse = ({
         ) : (
           <ProgressBar
             now={(workload * 100) / 4}
-            label={`Workload: ${(workload * 100) / 4}%`}
+            label={`Workload: ${Math.round((workload * 100) / 4)}%`}
           />
         )}
         <br />
