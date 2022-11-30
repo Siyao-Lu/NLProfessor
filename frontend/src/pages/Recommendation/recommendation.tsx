@@ -2,7 +2,6 @@ import React from "react";
 import { RecCourse } from "../../components/RecCourse/RecCourse";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "./recommendation.css";
-import styles from "./rec-nav.module.css";
 
 export type CourseRec = {
   basedOn: string[];
@@ -35,7 +34,7 @@ const Recommendation = ({ courses, basedOn, name }: AppProps) => {
           </h1>
         </div>
         <div className="text-muted text-center">
-          Key words: {basedOn.join(", ")}
+          Profile: {basedOn.join(", ")}
         </div>
       </div>
       <div className="rec-cards">
