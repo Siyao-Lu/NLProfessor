@@ -5,4 +5,5 @@ urlpatterns = [
     # define a route for home
     path('home/', views.home, name='home'),
     path('webhook/', views.webhook, name='webhook'),
+    path('report/', views.show_report, name='report')
 ]

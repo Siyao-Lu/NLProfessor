@@ -26,13 +26,13 @@ SECRET_KEY = 'django-insecure-#&u^r4!y6f4lnp^z0jx$kv_-46^p13f_r9i*%wp+r*@6xc13j6
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '427f-2601-400-8001-2a70-cc0-7893-368b-8933.ngrok.io',
+    'de5e-35-3-45-49.ngrok.io',
     '127.0.0.1',
+    'localhost',
 ]
 
 
 # Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -42,18 +42,21 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'webhook',
     'django_extensions',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
+    "corsheaders.middleware.CorsMiddleware",
+    'django.middleware.common.CommonMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-
+# CORS Config
+CORS_ORIGIN_ALLOW_ALL = True
 ROOT_URLCONF = 'advising_project.urls'
 
 TEMPLATES = [
