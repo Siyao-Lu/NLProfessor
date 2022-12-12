@@ -6,17 +6,25 @@ const RecommendationList = () => {
   const [data, setData] = useState();
   useEffect(() => {
     axios
-      .get(
-        `https://427f-2601-400-8001-2a70-cc0-7893-368b-8933.ngrok.io/report/`
-      )
+      .get(`https://de5e-35-3-45-49.ngrok.io/report/`, {
+        headers: {
+          "ngrok-skip-browser-warning": "69420",
+          "Access-Control-Allow-Origin": "*",
+        },
+      })
       .then((res) => {
+        console.log(res.data);
         setData(res.data);
       });
   }, []);
   return (
     <div>
       {data && (
-        <Recommendation courses={data["courses"]} basedOn={data["basedOn"]} />
+        <Recommendation
+          courses={data["courses"]}
+          basedOn={data["basedOn"]}
+          name={data["name"]}
+        />
       )}
     </div>
   );

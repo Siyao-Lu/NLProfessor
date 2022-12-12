@@ -2,7 +2,6 @@ import React from "react";
 import { RecCourse } from "../../components/RecCourse/RecCourse";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "./recommendation.css";
-import styles from "./rec-nav.module.css";
 
 export type CourseRec = {
   basedOn: string[];
@@ -16,9 +15,10 @@ export type CourseRec = {
 type AppProps = {
   courses: CourseRec[];
   basedOn: string[];
+  name: string;
 };
 
-const Recommendation = ({ courses, basedOn }: AppProps) => {
+const Recommendation = ({ courses, basedOn, name }: AppProps) => {
   return (
     <div className="rec-page">
       <style>
@@ -28,10 +28,13 @@ const Recommendation = ({ courses, basedOn }: AppProps) => {
       </style>
       <div className="rec-title">
         <div>
-          <h1 className="text-center">Your personalized recommendations</h1>
+          <h1 className="text-center">
+            {name.charAt(0).toUpperCase() + name.slice(1)}'s personalized
+            recommendations
+          </h1>
         </div>
         <div className="text-muted text-center">
-          Key words: {basedOn.join(", ")}
+          Profile: {basedOn.join(", ")}
         </div>
       </div>
       <div className="rec-cards">

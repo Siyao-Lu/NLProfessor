@@ -29,6 +29,7 @@
 .preview-img {
     justify-self: center;
     align-self: center;
+    border-radius: 1%;
     height: 88vh;
 }
 
